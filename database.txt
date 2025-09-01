@@ -1,0 +1,19 @@
+CREATE DATABASE ourpg_db;
+USE ourpg_db;
+CREATE TABLE pgs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    pg_name VARCHAR(255) NOT NULL,
+    owner_name VARCHAR(255) NOT NULL,
+    mobile VARCHAR(20) NOT NULL,
+    district VARCHAR(100) NOT NULL,
+    taluka VARCHAR(100) NOT NULL,
+    city_village VARCHAR(100) NOT NULL,
+    sharing VARCHAR(50) NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    address VARCHAR(255) NOT NULL
+);
+INSERT INTO pgs (pg_name, owner_name, mobile, district, taluka, city_village, sharing, price, address) VALUES
+('Comfort PG', 'John Doe', '9876543210', 'Bengaluru', 'Bengaluru Urban', 'Koramangala', 'Single', 8000.00, '123 MG Road, Bengaluru'),
+('Safe Stay PG', 'Jane Smith', '8765432109', 'Bengaluru', 'Bengaluru Rural', 'Devanahalli', 'Double', 5000.00, '45 Airport Road, Devanahalli'),
+('Budget PG', 'Alice Johnson', '7654321098', 'Bengaluru', 'Bengaluru Urban', 'Koramangala', 'Triple', 4000.00, '789 Koramangala, Bengaluru'),
+('Luxury PG', 'Bob Brown', '6543210987', 'Bengaluru', 'Bengaluru South', 'Jayanagar', 'Single', 12000.00, '101 Jayanagar, Bengaluru');

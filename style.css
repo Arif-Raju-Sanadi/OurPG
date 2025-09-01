@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e8f0fe; /* Soft blue fallback */
+    margin: 0;
+}
+
+/* Home Page */
+.home-bg {
+    background: url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/* Search Page */
+.search-bg {
+    background: url('https://images.unsplash.com/photo-1593693397690-362cb9666fc2') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/* Results Page */
+.results-bg {
+    background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.7); /* Darker overlay for better text contrast */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.search-card {
+    background: rgba(245, 245, 250, 0.95); /* Lavender-gray instead of white */
+    border-radius: 15px;
+    max-width: 800px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.form-label {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.form-select, .form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    background-color: #f9f9f9; /* Light cream for inputs */
+    transition: all 0.3s ease;
+}
+
+.form-select:focus, .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    transform: scale(1.02);
+}
+
+.form-select:hover, .form-control:hover {
+    border-color: #0056b3;
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, #28a745 0%, #34c759 100%);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #218838 0%, #2ca049 100%);
+    transform: translateY(-2px);
+}
+
+.search-btn {
+    background: linear-gradient(135deg, #007bff 0%, #00d4ff 100%);
+}
+
+.search-btn:hover {
+    background: linear-gradient(135deg, #0056b3 0%, #0096cc 100%);
+    transform: translateY(-2px);
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Cards */
+.pg-card {
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Light cream instead of white */
+    transition: all 0.3s ease;
+}
+
+.pg-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Typography */
+h1, h2 {
+    font-weight: 700;
+    color: #007bff;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.animate__pulse {
+    animation: pulse 2s infinite;
+}
