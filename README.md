@@ -1,1 +1,1 @@
-# OurPG
+OurPG is a web application to search and find PG accommodations in Bengaluru. Users can filter by district, taluka, city/village, sharing type, and price range. Results are displayed on an interactive Google Map with owner contact details for easy communication.
